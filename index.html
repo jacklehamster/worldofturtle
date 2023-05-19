@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -88,6 +89,19 @@
       font-size: 24px;
     }
 
+    .store-buttons {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .store-buttons img {
+      margin: 0 10px;
+      width: 150px;
+      height: auto;
+      cursor: pointer;
+    }
+
     @media screen and (max-width: 600px) {
       .container {
         padding: 20px;
@@ -110,15 +124,8 @@
       <section>
         <h2>About the Game</h2>
         <p>
-          World of Turtle is an engaging Sokoban-style puzzle game featuring comical and colorful graphics. Embark on a thrilling adventure through 100 levels of mind-bending challenges, collecting fruits, and reaching the helicopter landing zone. Beware of cunning crocodiles and treacherous waters as you navigate as a non-swimming turtle. Can you outsmart the dangers and conquer this hilarious puzzle game?
+          World of Turtle is an engaging Sokoban-style puzzle game featuring comical and colorful graphics. Embark on a thrilling adventure through 100 levels of mind-bending challenges, collecting fruits, and reaching the helicopter landing zone. Beware of cunning crocodiles and treacherous waters as you navigate as a turtle who can't swim!
         </p>
-      </section>
-
-      <section>
-        <h2>Gameplay Video</h2>
-        <div class="video-container">
-          <iframe src="https://www.youtube.com/embed/q6GJcYPxC9U" frameborder="0" allowfullscreen></iframe>
-        </div>
       </section>
 
       <section>
@@ -137,16 +144,15 @@
       </section>
 
       <section>
-        <h2>Languages</h2>
-        <p>Korea, French, English</p>
-      </section>
-
-      <section>
         <h2>Get the Game</h2>
-        <ul>
-          <li><a href="https://play.google.com/store/apps/details?id=net.dobuki.worldofturtle">Google Play Store</a></li>
-          <li><a href="https://store.steampowered.com/app/1512050/World_Turtles/">Steam</a></li>
-        </ul>
+        <div class="store-buttons">
+          <a href="https://play.google.com/store/apps/details?id=net.dobuki.worldofturtle">
+            <img src="https://example.com/google-play-store-logo.png" alt="Google Play Store" width="150">
+          </a>
+          <a href="https://store.steampowered.com/app/1512050/World_Turtles/">
+            <img src="https://example.com/steam-store-logo.png" alt="Steam Store" width="150">
+          </a>
+        </div>
       </section>
 
       <section>
