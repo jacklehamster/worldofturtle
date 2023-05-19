@@ -56,6 +56,38 @@
       transform: scale(1.1);
     }
 
+    .hero-image {
+      width: 100%;
+      height: auto;
+      margin-bottom: 20px;
+    }
+
+    .video-container {
+      position: relative;
+      width: 100%;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+    }
+
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    .social-media {
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .social-media a {
+      margin: 0 10px;
+      font-size: 24px;
+    }
+
     @media screen and (max-width: 600px) {
       .container {
         padding: 20px;
@@ -72,6 +104,10 @@
 
     <main>
       <section>
+        <img class="hero-image" src="images/hero-image.jpg" alt="World of Turtle Hero Image">
+      </section>
+
+      <section>
         <h2>About the Game</h2>
         <p>
           World of Turtle is an engaging Sokoban-style puzzle game featuring comical and colorful graphics. Embark on a thrilling adventure through 100 levels of mind-bending challenges, collecting fruits, and reaching the helicopter landing zone. Beware of cunning crocodiles and treacherous waters as you navigate as a non-swimming turtle. Can you outsmart the dangers and conquer this hilarious puzzle game?
@@ -79,54 +115,57 @@
       </section>
 
       <section>
-        <h2>Gameplay Screenshots</h2>
-        <div class="image-placeholder">
-          <img src="images/img1.jpg" alt="Gameplay Screenshot 1">
+        <h2>Gameplay Video</h2>
+        <div class="video-container">
+          <iframe src="https://www.youtube.com/embed/q6GJcYPxC9U" frameborder="0" allowfullscreen></iframe>
         </div>
-        <div class="image-placeholder">
-          <img src="images/img2.jpg" alt="Gameplay Screenshot 2">
-        </div>
-        <div class="image-placeholder">
-          <img src="images/img3.jpg" alt="Gameplay Screenshot 3">
-        </div>
+      </section>
+
+      <section>
+        <h2>Features</h2>
+        <ul>
+          <li>100 levels spread across 10 stages</li>
+          <li>Breakable blocks, ice blocks, transporting turtles, rolling carpet, crocodile, penguins, gorillas</li>
+          <li>Your progress gets saved</li>
+          <li>5 passes to skip levels, regain them by replaying skipped levels</li>
+          <li>One song per stage and a Jukebox to play unlocked songs</li>
+          <li>Gamepad support</li>
+          <li>AZERTY and QWERTY/Z keyboards supported</li>
+          <li>Walkthrough coming soon</li>
+          <li>Exciting bonus at the end</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Languages</h2>
+        <p>Korea, French, English</p>
       </section>
 
       <section>
         <h2>Get the Game</h2>
-        <p>World of Turtle is available on the following platforms:</p>
         <ul>
-          <li>
-            <a href="https://play.google.com/store/apps/details?id=net.dobuki.worldofturtle" target="_blank">Google Play Store</a>
-          </li>
-          <li>
-            <a href="https://store.steampowered.com/app/1512050/
-
-World_Turtles/" target="_blank">Steam</a>
-          </li>
+          <li><a href="https://play.google.com/store/apps/details?id=net.dobuki.worldofturtle">Google Play Store</a></li>
+          <li><a href="https://store.steampowered.com/app/1512050/World_Turtles/">Steam</a></li>
         </ul>
       </section>
 
       <section>
-        <h2>Stay Updated</h2>
-        <p>Follow us on social media to get the latest news and updates:</p>
-        <ul>
-          <li>Twitter: <a href="https://twitter.com/jacklehamster" target="_blank">@jacklehamster</a></li>
-          <li>Facebook: <a href="https://www.facebook.com/yourgamepage" target="_blank">Your Game Page</a></li>
-          <li>Instagram: N/A</li>
-        </ul>
-      </section>
-
-      <section>
-        <h2>About Our Studio</h2>
-        <p>World of Turtle is developed by Dobuki Studio. We are a game development studio dedicated to creating engaging and entertaining experiences. Visit our website to explore our other games and learn more about our work:</p>
+        <h2>About Dobuki Studio</h2>
         <p>
-          <a href="https://dobuki.net" target="_blank">https://dobuki.net</a>
+          Dobuki Studio is a game development studio passionate about creating unique and entertaining gaming experiences. With a focus on innovative gameplay and captivating visuals, we strive to bring joy to players around the world. Visit our <a href="https://dobuki.net">website</a> to explore more of our games and projects.
         </p>
       </section>
+
+      <section class="social-media">
+        <h2>Follow Dobuki Studio</h2>
+        <a href="https://twitter.com/jacklehamster">Twitter</a>
+        <a href="https://www.instagram.com/yourstudio">Instagram</a>
+      </section>
+
     </main>
 
     <footer>
-      <p style="text-align: center;">&copy; 2023 Your Game Name. All rights reserved.</p>
+      <p style="text-align: center;">&copy; 2023 Dobuki Studio. All rights reserved.</p>
     </footer>
   </div>
 </body>
