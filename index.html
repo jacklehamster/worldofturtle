@@ -6,55 +6,6 @@
   <title>World of Turtle - Puzzle Game</title>
   <style>
     /* Add your custom styles here */
-
-    /* Example styles for placeholders */
-    .image-placeholder {
-      background-color: #ccc;
-      width: 300px;
-      height: 200px;
-      transition: transform 0.3s ease-in-out;
-    }
-
-    .image-placeholder.highlighted {
-      transform: scale(1.1);
-    }
-  </style>
-  <script>
-    // Add JavaScript for the scrolling effect
-    window.addEventListener('scroll', function() {
-      var images = document.querySelectorAll('.image-placeholder');
-      for (var i = 0; i < images.length; i++) {
-        var image = images[i];
-        var position = image.getBoundingClientRect();
-        if (position.top < window.innerHeight && position.bottom >= 0) {
-          image.classList.add('highlighted');
-        } else {
-          image.classList.remove('highlighted');
-        }
-      }
-    });
-  </script>
-</head>
-<body>
-  <header>
-    <h1>World of Turtle - A Fun and Challenging Puzzle Game</h1>
-  </header>
-
-  <main>
-    <section>
-      <h2>About the Game</h2>
-      <p>
-        World of Turtle is an engaging Sokoban-style puzzle game featuring comical and colorful graphics. Embark on a thrilling adventure through 100 levels of mind-bending challenges, collecting fruits, and reaching the helicopter landing zone. Beware of cunning crocodiles and treacherous waters as you navigate as a non-swimming turtle. Can you outsmart the dangers and conquer this hilarious puzzle game?
-      </p>
-    </section>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>World of Turtle - Puzzle Game</title>
-  <style>
-    /* Add your custom styles here */
     body {
       font-family: 'Arial', sans-serif;
       background-color: #f2f2f2;
@@ -67,6 +18,7 @@
       max-width: 960px;
       margin: 0 auto;
       padding: 40px 20px;
+      box-sizing: border-box;
     }
 
     h1, h2 {
@@ -76,6 +28,7 @@
 
     p {
       line-height: 1.5;
+      margin-bottom: 20px;
     }
 
     ul {
@@ -101,6 +54,12 @@
 
     .image-placeholder.highlighted {
       transform: scale(1.1);
+    }
+
+    @media screen and (max-width: 600px) {
+      .container {
+        padding: 20px;
+      }
     }
   </style>
   <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
@@ -168,56 +127,5 @@
       <p style="text-align: center;">&copy; 2023 Your Game Name. All rights reserved.</p>
     </footer>
   </div>
-</body>
-</html>
-
-    <section>
-      <h2>Gameplay Screenshots</h2>
-      <div class="image-placeholder">
-        <!-- Replace with your actual gameplay screenshot, recommended dimensions: 800px x 600px -->
-      </div>
-      <div class="image-placeholder">
-        <!-- Replace with your actual gameplay screenshot, recommended dimensions: 800px x 600px -->
-      </div>
-      <div class="image-placeholder">
-        <!-- Replace with your actual gameplay screenshot, recommended dimensions: 800px x 600px -->
-      </div>
-    </section>
-
-    <section>
-      <h2>Get the Game</h2>
-      <p>World of Turtle is available on the following platforms:</p>
-      <ul>
-        <li>
-          <a href="https://play.google.com/store/apps/details?id=net.dobuki.worldofturtle" target="_blank">Google Play Store</a>
-        </li>
-        <li>
-          <a href="https://store.steampowered.com/app/1512050/World_Turtles/" target="_blank">Steam</a>
-        </li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Stay Updated</h2>
-      <p>Follow us on social media to get the latest news and updates:</p>
-      <ul>
-        <li>Twitter: <a href="https://twitter.com/yourgamehandle" target="_blank">@YourGameHandle</a></li>
-        <li>Facebook: <a href="https://www.facebook.com/yourgamepage" target="_blank">Your Game Page</a></li>
-        <li>Instagram: <a href="https://www.instagram.com/yourgamehandle" target="_blank">@YourGameHandle</a></li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>About Our Studio</h2>
-      <p>World of Turtle is developed by [Your Studio Name]. We are a game development studio dedicated to creating engaging and entertaining experiences. Visit our website to explore our other games and learn more about our work:</p>
-      <p>
-        <a href="https://dobuki.net" target="_blank">https://dobuki.net</a>
-      </p>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2023 Your Game Name. All rights reserved.</p>
-  </footer>
 </body>
 </html>
