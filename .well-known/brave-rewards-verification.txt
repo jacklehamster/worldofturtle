@@ -1,4 +1,0 @@
-This is a Brave Creators publisher verification file.
-
-Domain: worldofturtle.com
-Token: 7f73fa21391d28ef5b7636adf88b4a208cf49bbaf737a472c7fffdd3d1860c5e
